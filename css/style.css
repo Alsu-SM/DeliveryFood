@@ -2,6 +2,7 @@
 * {
   /* чтобы правильно высчитывались ширина и высота элементов */
   box-sizing: border-box;
+  font-family: fontawesome !important;
 }
 
 body {
@@ -88,12 +89,29 @@ body {
 }
 
 .button-icon {
-  margin-right: 6px;
+  margin-right: 10px;
   vertical-align: middle;
 }
 
 .button-card-text {
   margin-right: 10px;
+}
+
+.button-out {
+  display: none;
+  margin: 0 5px;
+}
+.heart {
+  font-style: normal;
+  color: #1890ff;
+  margin-right: 10px;
+  display: none;
+}
+.user-name {
+  display: none;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 18px;
 }
 .promo {
   filter: drop-shadow(0px 7px 12px rgba(158, 158, 163, 0.2));
@@ -477,6 +495,66 @@ body {
   padding: 15px 20px;
 }
 
+a,
+button {
+  cursor: pointer;
+  color: inherit;
+}
+
+.hide {
+  display: none;
+}
+
+.modal-dialog-auth {
+  width: auto;
+  position: relative;
+  min-height: 0px;
+}
+.close-auth {
+  font-size: 36px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.label-auth {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+.button-login {
+  margin: 0;
+}
+
+.modal-body-auth {
+  margin-bottom: 40px;
+}
+input#login {
+  margin-left: 50px;
+}
+
+/* .button:hover {
+  background: #1890ff;
+  border: 1px solid #1890ff;
+  color: #fff;
+}
+
+.button-primary:hover {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  color: #595959;
+}
+
+.button-auth {
+  background-position: 20px 13px;
+} */
+/* 
+.button-primary:hover .button-auth-svg {
+  background-color: #595959;
+} */
+
 /* Адаптив */
 /* 
 @media(условия, при которых включаются медиа-запросы) {
@@ -493,6 +571,10 @@ body {
 
   .category {
     max-width: 70px;
+  }
+  .menu-image {
+    width: 300px;
+    height: 180px;
   }
 }
 
@@ -518,6 +600,10 @@ body {
 
   .footer-link {
     font-size: 18px;
+  }
+  .menu-image {
+    width: 360px;
+    height: 200px;
   }
 }
 
@@ -554,6 +640,10 @@ body {
 
   .button {
     font-size: 14px;
+  }
+
+  .menu-image {
+    width: 270px;
   }
 }
 
@@ -617,6 +707,9 @@ body {
   .social-links {
     order: 2;
   }
+  .menu-image {
+    width: 500px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -657,5 +750,9 @@ body {
     flex-direction: column;
     margin-right: 0;
     margin-bottom: 20px;
+  }
+
+  .menu-image {
+    width: 400px;
   }
 }

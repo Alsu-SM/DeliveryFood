@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css\normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css\animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+
     <title>Delivery Food</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -29,15 +35,28 @@
         />
         <!-- Блок с кнопками -->
         <div class="buttons">
-          <button class="button button-primary">
-            <img class="button-icon" src="css\img\user.svg" alt="User" />
-            <span class="button-text">Войти</span>
+          <span class="user-name"></span>
+          <i class="far fa-heart heart"></i>
+          <button class="button button-primary button-auth">
+            <img
+              class="button-icon"
+              src="css\img\user.svg"
+              alt="User"
+              id="button-icon-img"
+            />
+            <i class="button-icon fas fa-check hide" id="check"></i>
+
+            <span class="button-text" id="login-button-text">Войти</span>
           </button>
 
-          <button class="button">
+          <!-- <button class="button">
             <img class="button-icon" src="css\img\shop.svg" alt="Shop" />
 
             <span class="button-text">Корзина</span>
+          </button> -->
+          <button class="button button-primary button-out">
+            <span class="button-text">Выйти</span>
+            <span class="button-out-svg"></span>
           </button>
         </div>
       </header>
@@ -63,7 +82,12 @@
             />
           </section>
           <div class="cards">
-            <a href="restaurant.html" target="_blank" class="card">
+            <a
+              href="restaurant.html"
+              target="_blank"
+              class="card wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.2s"
+            >
               <img
                 src="css\img\card-image-1.jpg"
                 alt="image"
@@ -89,7 +113,12 @@
               </div>
             </a>
             <!-- /.card -->
-            <a href="restaurant.html" target="_blank" class="card">
+            <a
+              href="restaurant.html"
+              target="_blank"
+              class="card wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.4s"
+            >
               <img
                 src="css\img\card-image-2.jpg"
                 alt="image"
@@ -115,7 +144,12 @@
               </div>
             </a>
             <!-- /.card -->
-            <a href="restaurant.html" target="_blank" class="card">
+            <a
+              href="restaurant.html"
+              target="_blank"
+              class="card wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.6s"
+            >
               <img
                 src="css\img\card-image-3.jpg"
                 alt="image"
@@ -141,7 +175,12 @@
               </div>
             </a>
             <!-- /.card -->
-            <a href="restaurant.html" target="_blank" class="card">
+            <a
+              href="restaurant.html"
+              target="_blank"
+              class="card wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.2s"
+            >
               <img
                 src="css\img\card-image-4.jpg"
                 alt="image"
@@ -167,7 +206,12 @@
               </div>
             </a>
             <!-- /.card -->
-            <a href="restaurant.html" target="_blank" class="card">
+            <a
+              href="restaurant.html"
+              target="_blank"
+              class="card wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.4s"
+            >
               <img
                 src="css\img\card-image-5.jpg"
                 alt="image"
@@ -193,7 +237,12 @@
               </div>
             </a>
             <!-- /.card -->
-            <a href="restaurant.html" target="_blank" class="card">
+            <a
+              href="restaurant.html"
+              target="_blank"
+              class="card wow animate__animated animate__fadeInUp"
+              data-wow-delay="0.6s"
+            >
               <img
                 src="css\img\card-image-6.jpg"
                 alt="image"
@@ -257,5 +306,40 @@
       </div>
     </footer>
     <!-- /.footer -->
+    <div class="modal modal-auth">
+      <div class="modal-dialog modal-dialog-auth">
+        <button class="close close-auth">&times;</button>
+        <form id="logInForm">
+          <fieldset class="modal-body modal-body-auth">
+            <legend class="modal-title">Авторизация</legend>
+            <label class="label-auth">
+              <span>Логин</span>
+              <input id="login" type="text" />
+            </label>
+            <label class="label-auth">
+              <span>Пароль</span>
+              <input id="password" type="password" />
+            </label>
+          </fieldset>
+          <!-- /.modal-body -->
+          <div class="modal-footer">
+            <div class="footer-buttons">
+              <button class="button button-primary button-login" type="submit">
+                Войти
+              </button>
+            </div>
+          </div>
+        </form>
+        <!-- /.modal-footer -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
+    <script src="js/wow.min.js"></script>
+
+    <script>
+      new WOW().init();
+    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>

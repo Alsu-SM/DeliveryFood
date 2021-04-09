@@ -99,7 +99,18 @@ body {
 
 .button-out {
   display: none;
+
   margin: 0 5px;
+}
+.button-out-svg {
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  background: url('../icon/logout.svg') no-repeat 50% 50%;
+}
+
+.button-icon-logout {
+  color: white;
 }
 .heart {
   font-style: normal;
@@ -382,7 +393,7 @@ body {
 .modal-dialog {
   max-width: 780px;
   width: 95%;
-  min-height: 552px;
+  /* min-height: 552px; */
 
   background: #ffffff;
   border-radius: 5px;
@@ -611,7 +622,13 @@ input#login {
   .container {
     max-width: 560px;
   }
+  .button-text {
+    display: none;
+  }
 
+  .button-icon {
+    margin: 0;
+  }
   .card-info {
     flex-wrap: wrap;
   }
@@ -713,10 +730,6 @@ input#login {
 }
 
 @media (max-width: 480px) {
-  .button-text {
-    display: none;
-  }
-
   .button {
     min-height: 40px;
   }

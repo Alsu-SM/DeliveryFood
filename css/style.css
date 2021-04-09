@@ -50,12 +50,12 @@ body {
   flex: 0.8;
 
   /* вставляем иконку как фоновую картинку */
-  background-image: url(/css/img/home.svg);
+  background-image: url(img/home.svg);
 }
 
 .input-search {
   width: 306px;
-  background-image: url(/css/img/search.svg);
+  background-image: url(img/search.svg);
   margin-left: auto;
 }
 
@@ -126,7 +126,7 @@ body {
 }
 .promo {
   filter: drop-shadow(0px 7px 12px rgba(158, 158, 163, 0.2));
-  background: #fff1b8 url(/css/img/promo2.jpeg) no-repeat top right -232px/878px;
+  background: #fff1b8 url(img/promo2.jpeg) no-repeat top right -232px/878px;
   border-radius: 10px;
   padding: 68px 70px;
   margin-bottom: 56px;
